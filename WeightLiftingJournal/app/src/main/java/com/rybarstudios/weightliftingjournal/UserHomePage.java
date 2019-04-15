@@ -11,7 +11,6 @@ import android.widget.Button;
 
 public class UserHomePage extends AppCompatActivity {
 
-    Button newWorkoutButton;
     Context context;
 
     @Override
@@ -22,14 +21,11 @@ public class UserHomePage extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        newWorkoutButton = findViewById(R.id.button_new_workout);
-        newWorkoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent newWorkoutIntent = new Intent(context, Workouts.class);
-                startActivityForResult(newWorkoutIntent, Constants.NEW_WORKOUT_REQUEST_CODE);
-            }
-        });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 
     @Override
@@ -40,5 +36,10 @@ public class UserHomePage extends AppCompatActivity {
                 Uri uri = data.getData();
             }
         }
+    }
+
+    public void newWorkout(View view) {
+        Intent newWorkoutIntent = new Intent(context, ExerciseType.class);
+        startActivityForResult(newWorkoutIntent, Constants.NEW_WORKOUT_REQUEST_CODE);
     }
 }

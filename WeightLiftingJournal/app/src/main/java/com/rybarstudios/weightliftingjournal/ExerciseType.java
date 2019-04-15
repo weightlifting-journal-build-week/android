@@ -1,16 +1,13 @@
 package com.rybarstudios.weightliftingjournal;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Workouts extends AppCompatActivity {
+public class ExerciseType extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workouts);
-
-        Intent intent = getIntent();
+        setContentView(R.layout.activity_exercise_type);
     }
 }
