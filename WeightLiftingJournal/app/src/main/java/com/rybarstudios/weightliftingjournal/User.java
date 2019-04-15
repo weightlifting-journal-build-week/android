@@ -2,11 +2,12 @@ package com.rybarstudios.weightliftingjournal;
 
 public class User {
 
-    private String name, email, password;
+    private String firstName, lastName, email, password;
     private int id, height, weight;
 
-    public User(String name, String email, String password, int id, int height, int weight) {
-        this.name = name;
+    public User(String firstName, String lastName, String email, String password, int id, int height, int weight) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.id = id;
@@ -14,8 +15,12 @@ public class User {
         this.weight = weight;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public String getEmail() {

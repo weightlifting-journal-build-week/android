@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">WeightLiftingJournal</string>
     <string name="username">Username:</string>
-    <string name="password">Password:</string>
     <string name="register_here">Register here.</string>
     <string name="login">Login</string>
+    <string name="register_new_user">Register new user</string>
+    <string name="first_name">First name:</string>
+    <string name="last_name">Last name:</string>
+    <string name="email">Email:</string>
+    <string name="password">Password</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="register">Register</string>
 </resources>
